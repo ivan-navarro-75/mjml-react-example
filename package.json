@@ -8,6 +8,7 @@
     "build:watch": "babel src --out-dir dist --watch",
     "prestart": "npm run build",
     "start": "npm run build:watch & nodemon ./dist/server.js --watch ./dist",
+    "startDebug": "npm run build:watch & nodemon --inspect ./dist/server.js --watch ./dist",
     "generate": "node ./dist/cli.js"
   },
   "author": {
@@ -29,6 +30,7 @@
     "mjml-react": "^1.0.45",
     "nodemon": "^1.18.9",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-intl": "^5.3.2"
   }
 }
