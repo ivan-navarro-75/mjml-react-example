@@ -1,7 +1,13 @@
 import React from 'react'
 import { MjmlText } from 'mjml-react'
 
-const FormattedText = (props) => (
+type Props = {
+  color: string
+  fontSize: string
+  children: React.ReactNode
+}
+
+const FormattedText = (props: Props) => (
   <MjmlText color={props.color} font-size={props.fontSize}>
     {props.children}
   </MjmlText>
